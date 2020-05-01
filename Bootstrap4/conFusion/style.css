@@ -1,22 +1,20 @@
-.row-header{
-    background-color: aqua;
-    margin: 0px auto;
-    padding: auto 20px;
+.jumbotron{
+    background-color: #a3f3eb;
+    padding: 10px 0px 10px 50px;
+    margin-bottom: 20px;
 }
 
 .row-content{
-    background-color: cadetblue;
-    margin: 0px 10px;
-    padding: auto 30px;
-    border: 1px ridge #0a3c57;
+    background-color: #f1ffab;
+    padding: 10px 20px 30px 20px;
+    margin: 20px auto;
 }
 
-.container{
-    margin: 10px auto;
+body{
+    background-color: #fbd341;
 }
 
 .footer{
-    background-color: darkturquoise;
-    margin: 40px 0px 0px 0px;
-    padding: auto 10px;
+    background-color: #fb9a40;
+    margin: 20px auto;
 }
