@@ -12,9 +12,21 @@
 
 body{
     background-color: #fbd341;
+    padding-top: 50px;
+    z-index: 0;
 }
 
 .footer{
     background-color: #fb9a40;
     margin: 20px auto;
+}
+
+address{
+    font-size: 80%;
+    margin: 0px;
+    color: red;
+}
+
+.navbar-dark{
+    background-color: #fb9a40;
 }
