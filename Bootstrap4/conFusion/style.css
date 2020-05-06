@@ -54,3 +54,8 @@ address{
     min-height: 300px;
 }
 
+#carouselButton{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
