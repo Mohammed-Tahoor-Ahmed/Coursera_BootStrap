@@ -317,33 +317,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".carousel").carousel({interval:1000});
-            $("#carousel-button").click(function() {
-                if($('#carousel-button').children('span').hasClass('fa fa-pause')) {
-                    $(".carousel").carousel('pause');
-                    $('#carousel-button').children('span').removeClass('fa fa-pause');
-                    $('#carousel-button').children('span').addClass('fa fa-play');
-                }
-                else if($('#carousel-button').children('span').hasClass('fa fa-play')) {
-                    $(".carousel").carousel('cycle');
-                    $('#carousel-button').children('span').removeClass('fa fa-play');
-                    $('#carousel-button').children('span').addClass('fa fa-pause');
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('#login-button').click(function() {
-                $('#loginModal').modal('show');
-            });
-            $('#reserve-button').click(function() {
-                $('#reserveModal').modal('show');
-            })
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
