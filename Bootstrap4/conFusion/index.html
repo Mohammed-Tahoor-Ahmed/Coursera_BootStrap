@@ -10,7 +10,7 @@
     
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 </head>
@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>CONTACT</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="login-button" type="button" class="btn">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -169,7 +169,7 @@
                 </div>
                 <div class="col-12 col-md-3 align-self-center order-last">
                     <a type="button" class="btn btn-block btn-warning" id="reserve-button"
-                    data-toggle="modal" data-target="#reserveModal">Reserve Table </a>
+                    >Reserve Table </a>
                 </div>
             </div>
         </div>
@@ -332,6 +332,16 @@
                     $('#carousel-button').children('span').addClass('fa fa-pause');
                 }
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#login-button').click(function() {
+                $('#loginModal').modal('show');
+            });
+            $('#reserve-button').click(function() {
+                $('#reserveModal').modal('show');
+            })
         });
     </script>
 </body>
