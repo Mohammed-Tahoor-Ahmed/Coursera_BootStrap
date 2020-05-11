@@ -1,0 +1,29 @@
+{
+  "name": "oc-practice",
+  "version": "1.0.0",
+  "description": "OC Exercise Practice",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammed-Tahoor-Ahmed/Courses-Practice.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Mohammed Tahoor Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammed-Tahoor-Ahmed/Courses-Practice/issues"
+  },
+  "homepage": "https://github.com/Mohammed-Tahoor-Ahmed/Courses-Practice#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^4.0.2"
+  }
+}
