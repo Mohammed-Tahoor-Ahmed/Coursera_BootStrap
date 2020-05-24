@@ -4,7 +4,8 @@ import { Card, CardImg, CardBody, CardText, CardTitle, Breadcrumb, BreadcrumbIte
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
-import { baseUrl } from '../shared/baseUrl'
+import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => (val) && (val.length >= len);
@@ -93,13 +94,18 @@ const minLength = (len) => (val) => (val) && (val.length >= len);
         
         if (dish != null) {
             return (
-                <Card>
-                    <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name}/>
-                    <CardBody>
-                    <CardTitle>{dish.name}</CardTitle>
-                            <CardText>{dish.description}</CardText>
-                    </CardBody>
-                </Card>
+                <FadeTransform in 
+                transformProps={{
+                    exitTransform: 'scale(0.5) translateY(-50%)'
+                }}>
+                    <Card>
+                        <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name}/>
+                        <CardBody>
+                        <CardTitle>{dish.name}</CardTitle>
+                                <CardText>{dish.description}</CardText>
+                        </CardBody>
+                    </Card>
+                </FadeTransform>
             );
         }
         else {
@@ -115,16 +121,20 @@ const minLength = (len) => (val) => (val) && (val.length >= len);
                 <div className="col-12 col-md-5 m-1">
                     <h4>Comments</h4>
                     <ul className="list-unstyled">
-                        {comments.map((element) => {
-                            return(
-                                <li>
-                                    <p>{element.comment}</p>
-                                    <p>--{element.author},&nbsp; 
-                                    {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(element.date)))}
-                                    </p>
-                                </li>
-                            );
-                        })}
+                        <Stagger in>
+                            {comments.map((element) => {
+                                return(
+                                    <Fade in>
+                                        <li>
+                                            <p>{element.comment}</p>
+                                            <p>--{element.author},&nbsp; 
+                                            {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(element.date)))}
+                                            </p>
+                                        </li>
+                                    </Fade>
+                                );
+                            })}
+                        </Stagger>
                     </ul>
                     <CommentForm dishId={dishId} postComment={postComment} />
                 </div>
