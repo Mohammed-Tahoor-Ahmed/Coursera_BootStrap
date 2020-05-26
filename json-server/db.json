@@ -201,6 +201,42 @@
       "comment": "It's your birthday, we're gonna party!",
       "author": "25 Cent",
       "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 0,
+      "author": "MithhuBhai",
+      "comment": "I don't like it",
+      "date": "2020-05-23T09:46:08.659Z",
+      "id": 20
+    },
+    {
+      "dishId": 0,
+      "author": "Tahoor",
+      "comment": "Meh!",
+      "date": "2020-05-23T09:47:20.655Z",
+      "id": 21
+    },
+    {
+      "dishId": 0,
+      "author": "Tahoor",
+      "comment": "Meh!",
+      "date": "2020-05-23T09:47:20.685Z",
+      "id": 22
+    },
+    {
+      "dishId": 3,
+      "author": "MithhuBhai",
+      "comment": "Not at all sweet",
+      "date": "2020-05-23T10:00:33.055Z",
+      "id": 23
+    },
+    {
+      "dishId": 3,
+      "rating": "3",
+      "author": "Tahoor",
+      "comment": "comment",
+      "date": "2020-05-23T10:01:14.146Z",
+      "id": 24
     }
   ],
   "promotions": [
@@ -263,6 +299,36 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
+    },
+    {
+      "firstname": "Mohammed Tahoor",
+      "lastname": "Ahmed",
+      "telnum": "9550375650",
+      "email": "tahoorofficial11@gmail.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "please",
+      "id": 2
+    },
+    {
+      "firstname": "Mohammed Tahoor",
+      "lastname": "Ahmed",
+      "telnum": "007",
+      "email": "mdtahoor1112@gmail.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "please",
+      "id": 3
+    },
+    {
+      "firstname": "Mohammed Tahoor",
+      "lastname": "Ahmed",
+      "telnum": "9550375650",
+      "email": "tahoorofficial11@gmail.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "Finally I Did It!!!!!!!!!!!!!!!!!!",
+      "id": 4
     }
   ]
 }
